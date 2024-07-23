@@ -6,7 +6,7 @@ from transformers import pipeline
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = os.getenv('FLASK_SECRET_KEY', 'default_secret_key')  # Replace with a real secret key
+app.secret_key = 'secret_key'
 
 
 #sentiment analysis pipeline
