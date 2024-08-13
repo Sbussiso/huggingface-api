@@ -29,6 +29,7 @@ def sentiment_pipe():
     result = sentiment_analysis(user_message)
     return jsonify({"message": result})
 
+# Sentiment analysis route
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 8000))
     print(f"Binding to port {port}")
